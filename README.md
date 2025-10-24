@@ -1,8 +1,8 @@
-# 🍕 Restaurant Review Chatbot
+# Restaurant Review Chatbot
 
 An intelligent chatbot that answers questions about a pizza restaurant using customer reviews. Built with RAG (Retrieval-Augmented Generation) architecture, combining semantic search with AI-powered responses.
 
-## 📋 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
@@ -12,20 +12,20 @@ An intelligent chatbot that answers questions about a pizza restaurant using cus
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This application uses advanced AI techniques to provide intelligent answers about a restaurant based on real customer reviews. Instead of generic responses, the chatbot retrieves relevant reviews and uses them as context to generate accurate, grounded answers.
 
 **Key Features:**
-- 💬 Interactive chat interface (Streamlit UI)
-- 🔍 Semantic search through customer reviews
-- 🤖 AI-powered responses using local LLM
-- 📊 Citation of relevant reviews for transparency
-- 🏠 Runs completely locally (no API costs!)
+- Interactive chat interface (Streamlit UI)
+- Semantic search through customer reviews
+- AI-powered responses using local LLM
+- Citation of relevant reviews for transparency
+- Runs completely locally (no API costs!)
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 ### **LangChain Framework**
 LangChain is a framework for developing applications powered by language models. It provides:
@@ -40,10 +40,10 @@ LangChain is a framework for developing applications powered by language models.
 Ollama is a tool for running large language models (LLMs) locally on your machine.
 
 **Benefits:**
-- 🔒 **Privacy**: Your data never leaves your computer
-- 💰 **Cost**: No API fees or usage limits
-- ⚡ **Speed**: No network latency
-- 🎯 **Control**: Choose from various open-source models (Llama, Mistral, etc.)
+- **Privacy**: Your data never leaves your computer
+- **Cost**: No API fees or usage limits
+- **Speed**: No network latency
+- **Control**: Choose from various open-source models (Llama, Mistral, etc.)
 
 **In this project:** We use `llama3.2` for generating responses and `mxbai-embed-large` for creating embeddings.
 
@@ -51,16 +51,16 @@ Ollama is a tool for running large language models (LLMs) locally on your machin
 Chroma is an open-source vector database designed for AI applications.
 
 **What it does:**
-- 📦 **Stores embeddings**: Numerical representations of text documents
-- 🔎 **Semantic search**: Finds similar documents by meaning, not keywords
-- 💾 **Persistence**: Saves your vector database to disk for reuse
-- ⚡ **Performance**: Fast similarity search even with thousands of documents
+- **Stores embeddings**: Numerical representations of text documents
+- **Semantic search**: Finds similar documents by meaning, not keywords
+- **Persistence**: Saves your vector database to disk for reuse
+- **Performance**: Fast similarity search even with thousands of documents
 
 **In this project:** Stores restaurant review embeddings and retrieves the most relevant reviews for each question.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 agentic-ai/
@@ -75,7 +75,7 @@ agentic-ai/
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -149,7 +149,7 @@ This only happens once. Subsequent runs will reuse the existing database.
 
 ---
 
-## 🎮 Running the Application
+## Running the Application
 
 ### Option 1: Streamlit Web Interface (Recommended)
 
@@ -187,7 +187,7 @@ Type your questions and press Enter. Type `q` to quit.
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 ### RAG (Retrieval-Augmented Generation) Pipeline
 
@@ -219,7 +219,7 @@ Question: "Is the delivery fast?"
 
 ---
 
-## 💡 Example Questions to Ask
+## Example Questions to Ask
 
 - What do customers say about the pizza quality?
 - Is the service good at this restaurant?
@@ -230,7 +230,7 @@ Question: "Is the delivery fast?"
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### "ModuleNotFoundError: No module named 'langchain_ollama'"
 **Solution:** Make sure your virtual environment is activated and dependencies are installed:
@@ -259,7 +259,7 @@ python app.py
 
 ---
 
-## 📚 Learn More
+## Learn More
 
 - **LangChain Documentation**: [https://python.langchain.com](https://python.langchain.com)
 - **Ollama Documentation**: [https://ollama.ai/docs](https://ollama.ai/docs)
@@ -268,7 +268,7 @@ python app.py
 
 ---
 
-## 📝 Notes
+## Notes
 
 - All processing happens locally on your machine
 - No data is sent to external APIs
@@ -277,7 +277,7 @@ python app.py
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork this project and customize it for your own use cases:
 - Replace the CSV file with your own data
@@ -287,5 +287,4 @@ Feel free to fork this project and customize it for your own use cases:
 
 ---
 
-**Happy Chatting! 🍕✨**
 
